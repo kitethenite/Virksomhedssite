@@ -1,5 +1,7 @@
 /********* 
 Made a separate one because the list became so long (: **********/
+
+/** for headers, such as h1, h2, h3 etc **/
 @font-face {
     font-family: 'Frank Ruhl Libre';
     src: url('FrankRuhlLibre-Regular.woff2') format('woff2');
@@ -8,6 +10,7 @@ Made a separate one because the list became so long (: **********/
     font-display: swap;
 }
 
+/** For quotes, or stuff between headers and paragraphs **/ 
 @font-face {
     font-family: 'Heebo';
     src: url('Heebo-Regular.woff2') format('woff2');
@@ -16,6 +19,8 @@ Made a separate one because the list became so long (: **********/
     font-display: swap;
 }
 
+/** For paragraphs, menu(?) and footers.
+I couldn't figure out a way to merge them all into one and the same, but they are all the same but with some different properties according to their names **/
 @font-face {
     font-family: 'Taviraj';
     src: url('Taviraj-Regular.woff2') format('woff2');

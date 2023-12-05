@@ -1,5 +1,6 @@
 /****** LAYOUT STYLES, ONLY GRIDS, MARGIN AND PADDINGS ETC - vi kan slette denne senere hvis vi kun skal bruge vores egen css-filer. Hvis I vil så kan denne bruges som en skabelon likt hvordan jeg kan lige at struktuere op mine css-filer. *******/
 
+
 /** Universal CSS reset - to remove the different browsers default stylings **/
 
 * {
@@ -7,6 +8,8 @@
 	padding: 0;
     box-sizing: border-box;
 }
+
+
 
 /********** grids **********/
 

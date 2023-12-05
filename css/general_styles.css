@@ -37,7 +37,14 @@ header {
 header a{
     color: white;
     text-decoration: none;
+}
 
+/** FOOTER AREA **/
+
+footer {
+    background-color: #573F3B;
+    color: white;
+    font-family: "Heebo", sans-serif;
 }
 
 /*********** desktop only *********/

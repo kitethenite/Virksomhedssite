@@ -11,7 +11,8 @@ Made a separate one because the list became so long (: **********/
   font-display: swap;
 }
 
-/** For quotes, or stuff between headers and paragraphs **/
+/** For paragraphs, menu(?) and footers.
+I couldn't figure out a way to merge them all into one and the same, but they are all the same but with some different properties according to their names  **/
 @font-face {
   font-family: "Heebo";
   src: url("../fonts/Heebo/Heebo-Regular.woff2") format("woff2");
@@ -20,8 +21,8 @@ Made a separate one because the list became so long (: **********/
   font-display: swap;
 }
 
-/** For paragraphs, menu(?) and footers.
-I couldn't figure out a way to merge them all into one and the same, but they are all the same but with some different properties according to their names **/
+/** For quotes, or stuff between headers and paragraphs 
+**/
 @font-face {
   font-family: "Taviraj";
   src: url("../fonts/Taviraj/Taviraj-Regular.woff2") format("woff2");

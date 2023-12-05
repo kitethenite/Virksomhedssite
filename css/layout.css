@@ -25,6 +25,11 @@
 }
 
 /***** global - both mobile and desktop *****/
+.toplogo {
+   
+    margin: -1em;
+}
+
 /*********** desktop only *********/
 @media screen and (min-width: 720px) {
   header {

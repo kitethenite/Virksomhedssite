@@ -8,7 +8,7 @@ Orange: #573F3B
 Green: #A7B284
 Off-white: #F2E6D9
 
-**/
+***** global styles - both mobile and desktop *****/
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Frank Ruhl Libre';
@@ -22,11 +22,24 @@ p {
     font-family: 'Taviraj';
 }
 
+body {
+    background-color: #F2E6D9;
+}
 
+/** HEADER AREA **/
 
-/***** global styles - both mobile and desktop *****/
+header {
+    background-color: #573F3B;
+    color: white;
+    font-family: "Taviraj", sans-serif;
+}
 
+header a{
+    color: white;
+    text-decoration: none;
 
-/********* mobile only ********/
+}
 
 /*********** desktop only *********/
+
+/********* mobile only ********/

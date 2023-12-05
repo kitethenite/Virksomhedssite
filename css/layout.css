@@ -1,20 +1,40 @@
-/****** LAYOUT STYLES, ONLY GRIDS, MARGIN AND PADDINGS ETC - vi kan slette denne senere hvis vi kun skal bruge vores egen css-filer. Hvis I vil så kan denne bruges som en skabelon likt hvordan jeg kan lige at struktuere op mine css-filer. *******/
-
+/****** LAYOUT STYLES, ONLY GRIDS, MARGIN AND PADDINGS ETC - Will be used for universal rules, such as for header and footer *******/
 
 /** Universal CSS reset - to remove the different browsers default stylings **/
 
 * {
-    margin: 0;
-	padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-
 /********** grids **********/
+.header-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.topnav-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
 
 /***** global - both mobile and desktop *****/
+/*********** desktop only *********/
+@media screen and (min-width: 720px) {
+  header {
+    padding: 2em;
+  }
+}
 
 /********* mobile only ********/
-
-/*********** desktop only *********/
+@media screen and (max-width: 720px) {
+  header {
+    padding: 1.5em;
+  }
+}

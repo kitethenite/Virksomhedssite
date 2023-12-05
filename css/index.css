@@ -1,0 +1,8 @@
+.index-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.index-grid :first-child {
+    grid-column: 1/-1;
+}

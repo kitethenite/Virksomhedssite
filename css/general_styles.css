@@ -47,6 +47,15 @@ footer {
     font-family: "Heebo", sans-serif;
 }
 
+footer h3 {
+    font-family: "Heebo", sans-serif;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
 /*********** desktop only *********/
 
 /********* mobile only ********/

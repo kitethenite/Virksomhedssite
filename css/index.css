@@ -6,3 +6,7 @@
 .index-grid :first-child {
     grid-column: 1/-1;
 }
+
+.index-img {
+    margin: auto; /* this centers the images */
+}

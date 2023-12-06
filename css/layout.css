@@ -1,4 +1,4 @@
-/****** LAYOUT STYLES, ONLY GRIDS, MARGIN AND PADDINGS ETC - Will be used for universal rules, such as for header and footer *******/
+/****** LAYOUT STYLES, ONLY GRIDS, WIDTH MARGIN AND PADDINGS ETC - Will be used for universal rules, such as for header and footer *******/
 
 /** Universal CSS reset - to remove the different browsers default stylings **/
 
@@ -22,24 +22,59 @@
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
 }
 
 /***** global - both mobile and desktop *****/
+
+/** HEADER AREA **/
+header {
+  padding: 2em;
+}
+
 .toplogo img {
   padding: 0 2em 0 0;
-  margin: 0 0 0 -2em;
+  margin: 0 0 0 -2em; 
 }
+
+/** footer area **/
+footer {
+  padding: 2em;
+}
+
+.footertime {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-self: start;
+}
+
+.footertime :first-child {
+  grid-column: 1/-1;
+}
+
+.footerhours  {
+  text-align: right;
+}
+
 
 /*********** desktop only *********/
 @media screen and (min-width: 720px) {
-  header {
-    padding: 2em;
+  main {
+    padding: 0 5%;
   }
-
+  
   .toplogo img {
     max-width: 400px;
     width: 100%;
     height: 100%;
+  }
+
+  /** footer area **/
+  footer img {
+    max-width: 150px;
+    width: 100%;
+    height: 100%;
+    
   }
 }
 
@@ -50,6 +85,12 @@
   }
 
   .toplogo img {
+    width: 100%;
+    height: 100%;
+  }
+
+  /** footer area **/
+  footer img {
     width: 100%;
     height: 100%;
   }

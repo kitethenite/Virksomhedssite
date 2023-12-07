@@ -11,7 +11,7 @@ Off-white: #F2E6D9
 ***** global styles - both mobile and desktop *****/
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Frank Ruhl Libre';
+    font-family: "Montserrat", sans-serif;
 }
 
 blockquote, q, cite {

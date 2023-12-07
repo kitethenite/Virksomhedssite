@@ -8,7 +8,6 @@
   box-sizing: border-box;
 }
 
-
 /********** grids **********/
 .header-grid {
   display: grid;
@@ -34,10 +33,14 @@ header {
 }
 
 .toplogo img {
-  max-width: 200px;
+  max-width: 150px;
   width: 100%;
   height: 100%;
-  margin: 2em 0 0 2em;
+  margin: 0.5em;
+}
+
+.topnav {
+  margin: 2em 0 0 0;
 }
 
 /** footer area **/
@@ -55,37 +58,32 @@ footer {
   grid-column: 1/-1;
 }
 
-.footerhours  {
+.footerhours {
   text-align: right;
 }
-
 
 /*********** desktop only *********/
 @media screen and (min-width: 720px) {
   main {
     padding: 0 5%;
   }
-  
 
   /** footer area **/
   footer img {
     max-width: 150px;
     width: 100%;
     height: 100%;
-    
   }
 }
 
 /********* mobile only ********/
 @media screen and (max-width: 720px) {
-  header {
-    padding: 2em;
-  }
-
   .toplogo img {
-    max-width: 200px;
+    max-width: 150px;
+    min-width: 70px;
     width: 100%;
     height: 100%;
+    margin: 0.5em;
   }
   /** footer area **/
   footer img {
@@ -95,8 +93,7 @@ footer {
 
   /* index page */
 
-  #main{
-    background: url(/snapshot.png);
+  #main {
     background-size: cover;
   }
 }
@@ -105,5 +102,14 @@ footer {
 @media screen and (max-width: 480px) {
   video {
     display: none;
+  }
+
+  .header-grid {
+    background: url(../img/banner-mobile-test.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: auto;
+    width: auto;
   }
 }

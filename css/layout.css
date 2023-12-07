@@ -8,6 +8,7 @@
   box-sizing: border-box;
 }
 
+
 /********** grids **********/
 .header-grid {
   display: grid;
@@ -33,8 +34,10 @@ header {
 }
 
 .toplogo img {
-  padding: 0 2em 0 0;
-  margin: 0 0 0 -2em; 
+  max-width: 200px;
+  width: 100%;
+  height: 100%;
+  margin: 2em 0 0 2em;
 }
 
 /** footer area **/
@@ -63,11 +66,6 @@ footer {
     padding: 0 5%;
   }
   
-  .toplogo img {
-    max-width: 400px;
-    width: 100%;
-    height: 100%;
-  }
 
   /** footer area **/
   footer img {
@@ -85,13 +83,27 @@ footer {
   }
 
   .toplogo img {
+    max-width: 200px;
     width: 100%;
     height: 100%;
   }
-
   /** footer area **/
   footer img {
     width: 100%;
     height: 100%;
+  }
+
+  /* index page */
+
+  #main{
+    background: url(/snapshot.png);
+    background-size: cover;
+  }
+}
+
+/* disables video on mobile */
+@media screen and (max-width: 480px) {
+  video {
+    display: none;
   }
 }

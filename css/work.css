@@ -1,0 +1,73 @@
+/**billeder og fonte**/
+
+.arbejde {
+  width: 80%;
+  margin-top: 10%;
+}
+
+.arbejde2 {
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.kontakt {
+  width: 30%;
+  margin-top: 3%;
+}
+
+h1 {
+  font-family: "Montserrat";
+  src: url("../fonts/FrankRuhlLibre/FrankRuhlLibre-Regular.woff2")
+    format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  font-size: 60px;
+  margin-top: 10%;
+  color: #573f3b;
+  background-color: #a7b285;
+}
+
+h2 {
+  font-family: "Montserrat";
+  src: url("../fonts/FrankRuhlLibre/FrankRuhlLibre-Regular.woff2")
+    format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  font-size: 60px;
+  margin-top: 10%;
+  color: #bf612b;
+}
+
+p {
+  font-size: 35px;
+}
+
+.p1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #a7b285;
+  font-size: 35px;
+  color: #573f3b;
+}
+
+.p2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 35px;
+  color: #bf612b;
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid_2-1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.col {
+  max-width: 80ch;
+}

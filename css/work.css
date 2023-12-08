@@ -1,5 +1,10 @@
 /**billeder og fonte**/
 
+screen {
+  background-color: #f8f6f2;
+  max-width: 800px;
+}
+
 .arbejde {
   width: 80%;
   margin-top: 10%;
@@ -17,28 +22,21 @@
 }
 
 h1 {
-  font-family: "Montserrat";
-  src: url("../fonts/FrankRuhlLibre/FrankRuhlLibre-Regular.woff2")
-    format("woff2");
+  font-size: 60px;
+  margin-top: 10%;
+  color: #a15a44;
   font-weight: bold;
   font-style: normal;
   font-display: swap;
-  font-size: 60px;
-  margin-top: 10%;
-  color: #573f3b;
-  background-color: #a7b285;
 }
 
 h2 {
-  font-family: "Montserrat";
-  src: url("../fonts/FrankRuhlLibre/FrankRuhlLibre-Regular.woff2")
-    format("woff2");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
   font-size: 60px;
   margin-top: 10%;
-  color: #bf612b;
+  color: #a15a44;
 }
 
 p {
@@ -46,16 +44,17 @@ p {
 }
 
 .p1 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  background-color: #a7b285;
   font-size: 35px;
-  color: #573f3b;
+  color: #a15a44;
+  font-family: "Heebo";
+  src: url("../fonts/Heebo/Heebo-Regular.woff2") format("woff2");
 }
 
 .p2 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Heebo";
+  src: url("../fonts/Heebo/Heebo-Regular.woff2") format("woff2");
   font-size: 35px;
-  color: #bf612b;
+  color: #a15a44;
 }
 
 .grid_1-1 {

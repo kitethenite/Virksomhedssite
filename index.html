@@ -8,25 +8,32 @@
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <script src="js/script.js"></script>
   </head>
   <body>
-    <header class="header-grid">
-      <div class="toplogo">
-        <a href="index.html"
-          ><img src="img/logo-med-cirkel.svg" alt="logo for Tak for kaffe"
-        /></a>
+    <header class="header-grid" >
+        <div class="banner-video">
+          <video autoplay muted loop>
+            <source src="video/header-video.mp4" type="video/mp4" />
+          </video>
       </div>
-      <div class="topnav topnav-grid">
-        <a href="menu.html">Menu</a>
-        <a href="contact.html">Kontakt</a>
-        <a href="work.html">Job</a>
-        <a href="about.html">Om os</a>
-      </div>
+      <div class="overlay">
+        <div class="navigation">
+        <div class="toplogo">
+          <a href="index.html"
+            ><img src="img/logo-original.svg" alt="logo for Tak for kaffe"
+          /></a>
+        </div>
+        <div class="topnav topnav-grid">
+          <a href="menu.html">Menu</a>
+          <a href="contact.html">Kontakt</a>
+          <a href="work.html">Job</a>
+          <a href="about.html">Om os</a>
+        </div>
+      </div></div>
+      
     </header>
     <main class="index-grid">
-      <div class="banner-video">
-        <img src="https://loremflickr.com/1200/350/kitten" alt="" />
-      </div>
       <div>
         <div>
           <h1>Titel</h1>
@@ -42,8 +49,12 @@
           </p>
         </div>
       </div>
-      <div class="index-img"><img src="https://placehold.co/300x300" alt="" /></div>
-      <div class="index-img"><img src="https://placehold.co/300x300" alt="" /></div>
+      <div class="index-img">
+        <img src="https://placehold.co/300x300" alt="" />
+      </div>
+      <div class="index-img">
+        <img src="https://placehold.co/300x300" alt="" />
+      </div>
       <div>
         <div>
           <h2>Second title</h2>

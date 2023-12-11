@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tak for kaffe</title>
+    <title>Tak for Kaffe</title>
     <link rel="stylesheet" href="css/general_styles.css" />
     <!-- <link rel="stylesheet" href="css/layout.css" /> -->
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="icon" href="img/favicon.svg">
+    <link rel="mask-icon" href="img/favicon.svg" color="#000000">
   </head>
   <body>
     <header class="header-grid">
@@ -54,7 +56,7 @@
     </header>
     <main class="index-grid" id="scrollto">
       <div class="index-main-row-1 brown-bg">
-        <div>
+        <div class="index-main-text">
           <h1>Tak for Kaffe</h1>
           <div>
             <p>
@@ -73,7 +75,9 @@
             alt="image of the cafe"
             class="image"
           />
-          <a href="menu.html" class="menu-btn">se vores menu</a>
+          <div class="menu-btn-div">
+            <a href="menu.html" class="menu-btn">Se vores menu her</a>
+          </div>
         </div>
       </div>
       <div class="index-main-row-2">
@@ -84,7 +88,7 @@
             class="image"
           />
         </div>
-        <div>
+        <div class="index-main-text">
           <div>
             <h2>Kaffe</h2>
           </div>
@@ -108,8 +112,8 @@
     </main>
     <footer class="footer-grid">
       <div class="footertime">
-        <h3>Åbningstider</h3>
-        <div class="footerdays">
+        <h3 class="openingtime">Åbningstider</h3>
+        <div class="openingdays">
           <p>Man - fre</p>
           <p>Lørdag</p>
           <p>Søndag</p>

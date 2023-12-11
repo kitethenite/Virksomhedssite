@@ -8,6 +8,15 @@ img {
   width: 100%;
 }
 
+.image {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; /* Adjust animation properties */
+}
+
+.image-visible {
+  opacity: 1;
+}
+
 /* HEADER AREA */
 .header-grid {
   margin: 0;
@@ -106,17 +115,59 @@ video {
   height: auto;
 }
 
-/**** main area ****/
-
-main {
-  padding: 0 5%;
-  margin: 5em 0;
+.scroll-down-arrow {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: moveUpDown 1.5s infinite;
 }
+
+@keyframes moveUpDown {
+  0% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, 10px);
+  }
+  100% {
+    transform: translate(-50%, 0);
+  }
+}
+
+/**** main area ****/
 
 .index-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 0 2em;
+}
+
+.index-main-row-1,
+.index-main-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3em;
+  padding: 5em 0;
+}
+
+.index-main-row-1 {
+  color: #F8F6F2;
+}
+
+main p, h1, h2 {
+  margin: 0 5%;
+}
+
+.brown-bg {
+  background-color: #a15a44;
+}
+
+.menu-btn {
+  background-color: white;
+  text-decoration: none;
+  padding: 1em;
+  margin: 2em;
 }
 
 .index-img {
@@ -139,8 +190,8 @@ footer {
 .footertime {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  place-self: auto;
 }
-
 
 .footertime h3 {
   grid-column: 1/-1;
@@ -174,7 +225,8 @@ footer {
 }
 
 .sm-icon:hover {
-  filter: invert(20%) sepia(50%) saturate(2192%) hue-rotate(320deg) brightness(88%) contrast(78%);
+  filter: invert(20%) sepia(50%) saturate(2192%) hue-rotate(320deg)
+    brightness(88%) contrast(78%);
 }
 
 .footerlogo {
@@ -184,7 +236,8 @@ footer {
 }
 
 .footerlogo:hover {
-  filter: invert(20%) sepia(50%) saturate(2192%) hue-rotate(320deg) brightness(88%) contrast(78%);
+  filter: invert(20%) sepia(50%) saturate(2192%) hue-rotate(320deg)
+    brightness(88%) contrast(78%);
 }
 
 /********* mobile only ********/
@@ -207,6 +260,10 @@ footer {
     }
 
     /*** end of video disable ***/
+
+    .scroll-down-link {
+      display: none;
+    }
   }
 
   /* Header mobile */
@@ -270,6 +327,12 @@ footer {
     grid-template-columns: 1fr;
     gap: 2em;
   }
+
+  .index-main-row-1,
+.index-main-row-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
 
   /* Footer mobile */
 

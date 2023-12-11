@@ -1,10 +1,9 @@
 /**billeder og fonte**/
 
 screen {
-  background-color: #F2E6D9;
+  background-color: #f2e6d9;
   max-width: 800px;
 }
-
 
 .om {
   width: 60%;
@@ -13,11 +12,12 @@ screen {
 }
 
 .arbejde2 {
-  width: 100%; 
-  height: auto; 
-  margin: 0%; 
+  width: 100%;
+  height: auto;
+  margin: 0%;
 }
 
+<<<<<<< HEAD
 .smiley_rapport {
   width: 15%; 
   height: auto; 
@@ -26,9 +26,11 @@ screen {
 }
 
 
+=======
+>>>>>>> b4c1bf5e1ec6e5018f51b6482879c77036381f69
 .kontakt {
   width: 30%;
-  margin-top: 3%
+  margin-top: 3%;
 }
 
 h1 {
@@ -51,8 +53,12 @@ h2 {
 }
 
 .p1 {
+<<<<<<< HEAD
 
   color: #A15A44;
+=======
+  color: #a15a44;
+>>>>>>> b4c1bf5e1ec6e5018f51b6482879c77036381f69
   font-family: "Heebo";
   src: url("../fonts/Heebo/Heebo-Regular.woff2") format("woff2");
   margin-right: 100px;
@@ -62,8 +68,11 @@ h2 {
 .p2 {
   font-family: "Heebo";
   src: url("../fonts/Heebo/Heebo-Regular.woff2") format("woff2");
+<<<<<<< HEAD
   font-size: 20px;
   line-height: 1.5;
+=======
+>>>>>>> b4c1bf5e1ec6e5018f51b6482879c77036381f69
   color: white;
   margin-left: 90px;
   margin-right: 70px;
@@ -80,8 +89,6 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 50px;
-  padding: 0 auto ;
-  background-color: #A15A44;
+  padding: 0 auto;
+  background-color: #a15a44;
 }
-
-

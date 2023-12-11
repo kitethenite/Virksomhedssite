@@ -56,7 +56,6 @@ nav {
 
 .menu a {
   display: inline;
-  padding: 10px;
   text-decoration: none;
   transition: color 0.5s;
 }

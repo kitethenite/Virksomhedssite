@@ -28,11 +28,11 @@ h6 {
 blockquote,
 q,
 cite {
-  font-family: "Taviraj";
+  font-family: "Taviraj", sans-serif;
 }
 
 p {
-  font-family: "Heebo";
+  font-family: "Heebo", sans-serif;
 }
 
 body {
@@ -50,6 +50,7 @@ header a {
   color: #a15a44;
   text-decoration: none;
 }
+
 
 /** used to change colour of SVG-logo in header as from https://isotropic.co/tool/hex-color-to-css-filter/ **/
 .filter-brown {
@@ -77,3 +78,14 @@ footer a {
 /*********** desktop only *********/
 
 /********* mobile only ********/
+@media screen and (max-width: 720px) {
+  .menu a {
+    margin: 1em 0 0;
+    line-height: 150%;
+  }
+
+  .opacity {
+    background-color: black;
+  }
+
+}

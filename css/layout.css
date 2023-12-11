@@ -14,11 +14,6 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.topnav-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -27,17 +22,75 @@
 
 /***** global - both mobile and desktop *****/
 
-/** HEADER AREA **/
-header {
-  padding: 2em;
+/* Header */
+.toplogo {
+  align-self: start;
+  margin: 1em;
 }
 
 .toplogo img {
-  padding: 0 2em 0 0;
-  margin: 0 0 0 -2em; 
+  max-width: 150px;
+  width: 100%;
+  height: 100%;
 }
 
-/** footer area **/
+
+nav {
+  margin: 2em 2em 0 0;
+  text-align: end; 
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  list-style: none;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: inline;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+
+.menu a:hover {
+  color: rgb(77, 71, 89);
+}
+
+.burger {
+  position: relative;
+  left: 90%;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #A15A44;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+
+.burger {
+  display: none;
+}
+
+/* Main */
+main {
+  padding: 0 5%;
+}
+
+/* Footer*/
 footer {
   padding: 2em;
 }
@@ -52,45 +105,80 @@ footer {
   grid-column: 1/-1;
 }
 
-.footerhours  {
+.footerhours {
   text-align: right;
 }
 
-
 /*********** desktop only *********/
 @media screen and (min-width: 720px) {
-  main {
-    padding: 0 5%;
-  }
-  
-  .toplogo img {
-    max-width: 400px;
-    width: 100%;
-    height: 100%;
-  }
+/** Header area **/
+nav {
+  justify-self: auto;
+}
 
   /** footer area **/
   footer img {
     max-width: 150px;
     width: 100%;
     height: 100%;
-    
   }
 }
 
 /********* mobile only ********/
 @media screen and (max-width: 720px) {
-  header {
-    padding: 2em;
-  }
-
+  /* Header */
   .toplogo img {
+    max-width: 150px;
+    min-width: 70px;
     width: 100%;
     height: 100%;
   }
 
-  /** footer area **/
+  /***** Burger menu *****/
+
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+
+  /*** end of burger menu ***/
+
+  /* Footer */
   footer img {
+    min-width: 80px;
     width: 100%;
     height: 100%;
   }

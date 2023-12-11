@@ -7,20 +7,67 @@
     <link rel="stylesheet" href="css/general_styles.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/about.css" />
   </head>
   <body>
-    <header>
+    <header class="header-grid">
       <div class="toplogo">
-        <a href="index.html"><img src="" alt="logo for Tak for kaffe" /></a>
-      </div>
-      <div class="topnav">
-        <a href="menu.html">Menu</a>
-        <a href="contact.html">Kontakt</a>
-        <a href="work.html">Job</a>
-        <a href="about.html">Om os</a>
+            <a href="index.html"
+              ><img src="img/logo-original.svg" alt="logo for Tak for kaffe" class="filter-brown"
+            /></a>
+          </div>
+          <nav>
+            <ul class="menu">
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="contact.html">Kontakt</a></li>
+              <li><a href="work.html">Job</a></li>
+              <li><a href="about.html">Om os</a></li>
+            </ul>
+            <div class="burger">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+          </div>
+          </nav>
       </div>
     </header>
-    <main></main>
+    <main>
+
+      <section id="grid_1-1">
+        <div class="col">
+          <img src="img/kaffe.jpg" alt="kaffe" class="om" />
+          <img src="img/musliboller.jpg" alt="musliboller" class="om" />
+          <img src="img/snueknuser.jpg" alt="snueknuser" class="om" />
+        </div>
+        <div class="col2">
+          <h1>Om</h1>
+          <p class="p1">
+            Lorem ipsum dolor sit amet consectetur. Fames rhoncus ipsum platea porttitor sagittis. Semper arcu mauris id quis leo nulla sagittis tortor a. Malesuada ultrices amet nunc ante molestie. Adipiscing sit curabitur orci quisque. Aliquam a tincidunt blandit fames. Duis in maecenas semper luctus ut urna eu. Quis at lectus eu nam. Nunc.
+          </p>
+        </div>
+      </section>
+
+      <section id="grid_2-1">
+        <div class="col3">
+          <h2>Vores vision</h2>
+          <p class="p2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi fugiat
+            natus nihil repellendus. Sed ad explicabo unde quos nemo tenetur
+            facere aspernatur velit? Dolorum illo illum maiores debitis id
+            dicta.
+          </p>
+          
+        </div>
+        <div class="col4">
+          <img
+            src="img/vores_vision.png"
+            alt="Vores vision"
+            class="arbejde2"
+          />
+        </div>
+      </section>
+
+    </main>
     <footer>
       <div class="footercontact"></div>
       <div class="footeraddress"></div>
@@ -30,5 +77,6 @@
           ><img src="" alt="small logo picture for Tak for kaffe" /></a>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

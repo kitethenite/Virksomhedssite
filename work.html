@@ -1,31 +1,85 @@
 <!DOCTYPE html>
 <html lang="da">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Work</title>
-    <link rel="stylesheet" href="css/general_styles.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/fonts.css">
-</head>
-<body>
-    <header>
-        <div class="toplogo">
-            <a href="index.html"><img src="" alt="logo for Tak for kaffe" /></a>
+    <link rel="stylesheet" href="css/general_styles.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/work.css" />
+  </head>
+  <body>
+    <header class="header-grid">
+      <div class="toplogo">
+            <a href="index.html"
+              ><img src="img/logo-original.svg" alt="logo for Tak for kaffe" class="filter-brown"
+            /></a>
           </div>
-          <div class="topnav">
-            <a href="menu.html">Menu</a>
-            <a href="contact.html">Kontakt</a>
-            <a href="work.html">Job</a>
-            <a href="about.html">Om os</a>
+          <nav>
+            <ul class="menu">
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="contact.html">Kontakt</a></li>
+              <li><a href="work.html">Job</a></li>
+              <li><a href="about.html">Om os</a></li>
+            </ul>
+            <div class="burger">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
           </div>
+          </nav>
+      </div>
     </header>
-    <main></main>
+    <main>
+      <section class="grid_1-1">
+        <div class="col">
+          <img src="img/stole.png" alt="Hyggeligcafe" class="arbejde" />
+        </div>
+        <div class="col2">
+          <h1>Ledige stillinger</h1>
+          <p class="p1">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam
+            facere enim, minima quis laborum voluptates! Ducimus veniam eligendi
+            a autem modi quos perferendis, minus tenetur similique? Sit
+            quibusdam dignissimos quod?
+          </p>
+        </div>
+      </section>
+
+      <section class="grid_2-1">
+        <div class="col">
+          <h2>Hvad du kan forvente</h2>
+          <p class="p2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi fugiat
+            natus nihil repellendus. Sed ad explicabo unde quos nemo tenetur
+            facere aspernatur velit? Dolorum illo illum maiores debitis id
+            dicta.
+          </p>
+
+          <a href="contact.html"
+            ><img src="img/kontakt.png" alt="contact.html" class="kontakt"
+          /></a>
+        </div>
+        <div class="col2">
+          <img
+            src="img/elefantkaffe.png.jpg"
+            alt="elefantlatte"
+            class="arbejde2"
+          />
+        </div>
+      </section>
+    </main>
     <footer>
-        <div class="footercontact"></div>
+      <div class="footercontact"></div>
       <div class="footeraddress"></div>
       <div class="footersm"></div>
-      <div class="footerlogo"><a href="index.html"><img src="" alt="small logo picture for Tak for kaffe"></a></div>
+      <div class="footerlogo">
+        <a href="index.html"
+          ><img src="" alt="small logo picture for Tak for kaffe"
+        /></a>
+      </div>
     </footer>
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>

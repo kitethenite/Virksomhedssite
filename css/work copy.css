@@ -52,12 +52,22 @@
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2em;
-    padding: 5%;
+    margin-left: 100px;
+    margin-right: 100px;
   }
 
-  .col-text {
-    margin-top: -11px;
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .col {
+    max-width: 850px;
+  }
+  .col2 {
+    max-width: 800px;
   }
 }
 @media (max-width: 800px) {

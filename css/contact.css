@@ -1,0 +1,57 @@
+h1 {
+    text-align: center;
+    font-family: "Heebo";
+    color: #A15A44
+}
+
+email { 
+position: absolute;
+width: 367px;
+height: 31px;
+
+font-family: 'Frank Ruhl Libre';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 31px;
+/* identical to box height */
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #A15A44;
+}
+
+css
+.contact-info p {
+  display: inline;
+  margin-right: 100px; /* Juster margenen efter behov */
+}
+
+.grid_1-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.form-field {
+    text-align: center;
+
+}
+
+img {
+   max-width: 14%; 
+   margin: auto;
+   
+}
+
+.knap {
+    min-width: 30;
+}
+
+.p {
+    font-family: "Heebo";
+    src: url("../fonts/Heebo/Heebo-Regular.woff2") format("woff2");
+    color: #A15A44
+  }
+
+.text-field { 
+    height: 500px; }

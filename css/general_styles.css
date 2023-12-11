@@ -80,6 +80,11 @@ footer a:hover {
   color: #dbb070;
 }
 
+footer p {
+  font-size: calc(10px + 0.390625vw);
+
+}
+
 /*********** desktop only *********/
 
 /********* mobile only ********/

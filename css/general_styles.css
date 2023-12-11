@@ -34,6 +34,7 @@ cite {
 
 p {
   font-family: "Heebo", sans-serif;
+  font-size: 20px;
 }
 
 body {
@@ -52,7 +53,6 @@ header a {
   text-decoration: none;
 }
 
-
 /** used to change colour of SVG-logo in header as from https://isotropic.co/tool/hex-color-to-css-filter/ **/
 .filter-brown {
   filter: invert(60%) sepia(8%) saturate(2192%) hue-rotate(320deg)
@@ -61,7 +61,7 @@ header a {
 /** FOOTER AREA **/
 
 footer {
-  background-color: #A15A44;
+  background-color: #a15a44;
   color: white;
   font-family: "Heebo", sans-serif;
   font-size: calc(10px + 0.390625vw);
@@ -89,5 +89,4 @@ footer a {
   .opacity {
     background-color: black;
   }
-
 }

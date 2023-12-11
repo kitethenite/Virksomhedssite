@@ -1,3 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+
+}
 /* HEADER AREA */
 .header-grid {
   margin: 0;
@@ -7,14 +17,80 @@
   overflow: hidden;
 }
 
-
 .overlay {
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: 2;
-  background-image: linear-gradient(rgba(34,35,46,0.75), 
-  rgba(204, 237, 239, 0.1));
+  background-image: linear-gradient(
+    rgba(34, 35, 46, 0.75),
+    rgba(204, 237, 239, 0.1)
+  );
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.toplogo {
+  align-self: start;
+  margin: 1em;
+}
+
+.toplogo img {
+  max-width: 150px;
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  margin: 2em 2em 0 0;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  list-style: none;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+}
+
+.menu a:hover {
+  color: rgb(177, 108, 80);
+}
+
+.burger {
+  position: relative;
+  left: 90%;
+  top: 1em;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #fafafa;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+
+.burger {
+  display: none;
 }
 
 .banner-video {
@@ -29,11 +105,138 @@ video {
   height: auto;
 }
 
-.navigation {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+/**** main ****/
+
+main {
+  padding: 0 5%;
 }
-/* main area */
+
+/*** footer area ****/
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+}
+
+footer {
+  padding: 2em;
+  font-size: calc(10px + 0.390625vw);
+}
+
+.footertime {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-self: start;
+}
+
+.footertime :first-child {
+  grid-column: 1/-1;
+}
+
+.footerhours {
+  text-align: right;
+}
+
+
+/********* mobile only ********/
+@media screen and (max-width: 720px) {
+
+  /* disables video on mobile */
+  @media screen and (max-width: 480px) {
+    video {
+      display: none;
+    }
+  
+    .header-grid {
+      background: url(../img/banner-mobile-test.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+  
+    .banner-video,
+    .overlay {
+      height: 50vh;
+    }
+  
+    /*** end of video disable ***/
+  }
+
+  /* Header */
+  .toplogo img {
+    max-width: 150px;
+    min-width: 70px;
+    width: 100%;
+    height: 100%;
+  }
+
+  /***** Burger menu *****/
+
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+
+  /*** end of burger menu ***/
+
+  /* Footer */
+  footer img {
+    min-width: 80px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/** desktop for header and footer **/
+@media screen and (min-width: 720px) {
+  /** Header area **/
+  nav {
+    justify-self: auto;
+  }
+
+  /** footer area **/
+  footer img {
+    max-width: 150px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+
+/****** Main-element content ******/
 .index-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -41,4 +244,21 @@ video {
 
 .index-img {
   margin: auto; /* this centers the images */
+}
+
+#main {
+  background-size: cover;
+}
+
+/***** desktop view *****/
+@media screen and (min-width: 720px) {
+}
+
+/***** Mobile view *****/
+@media screen and (max-width: 720px) {
+  /* Main */
+  .index-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }

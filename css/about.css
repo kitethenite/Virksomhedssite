@@ -17,6 +17,17 @@ screen {
   margin: 0%;
 }
 
+<<<<<<< HEAD
+.smiley_rapport {
+  width: 15%; 
+  height: auto; 
+  margin-left: 90px;
+  margin-top: 50px;
+}
+
+
+=======
+>>>>>>> b4c1bf5e1ec6e5018f51b6482879c77036381f69
 .kontakt {
   width: 30%;
   margin-top: 3%;
@@ -41,12 +52,13 @@ h2 {
   color: white;
 }
 
-p {
-  font-size: 20px;
-}
-
 .p1 {
+<<<<<<< HEAD
+
+  color: #A15A44;
+=======
   color: #a15a44;
+>>>>>>> b4c1bf5e1ec6e5018f51b6482879c77036381f69
   font-family: "Heebo";
   src: url("../fonts/Heebo/Heebo-Regular.woff2") format("woff2");
   margin-right: 100px;
@@ -56,6 +68,11 @@ p {
 .p2 {
   font-family: "Heebo";
   src: url("../fonts/Heebo/Heebo-Regular.woff2") format("woff2");
+<<<<<<< HEAD
+  font-size: 20px;
+  line-height: 1.5;
+=======
+>>>>>>> b4c1bf5e1ec6e5018f51b6482879c77036381f69
   color: white;
   margin-left: 90px;
   margin-right: 70px;

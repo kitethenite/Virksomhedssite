@@ -1,0 +1,98 @@
+/****** LAYOUT STYLES, ONLY GRIDS, WIDTH MARGIN AND PADDINGS ETC - Will be used for universal rules, such as for header and footer *******/
+
+/** Universal CSS reset - to remove the different browsers default stylings **/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/********** grids **********/
+.header-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.topnav-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+}
+
+/***** global - both mobile and desktop *****/
+
+/* Header */
+header {
+  padding: 2em;
+}
+
+.toplogo img {
+  max-width: 150px;
+  width: 100%;
+  height: 100%;
+  margin: 0.5em;
+}
+
+.topnav {
+  margin: 2em 0 0 0;
+}
+
+
+/* Main */
+main {
+  padding: 0 5%;
+}
+
+/* Footer*/
+footer {
+  padding: 2em;
+}
+
+.footertime {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-self: start;
+}
+
+.footertime :first-child {
+  grid-column: 1/-1;
+}
+
+.footerhours {
+  text-align: right;
+}
+
+/*********** desktop only *********/
+@media screen and (min-width: 720px) {
+ /** footer area **/
+  footer img {
+    max-width: 150px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/********* mobile only ********/
+@media screen and (max-width: 720px) {
+  /* Header */
+  .toplogo img {
+    max-width: 150px;
+    min-width: 70px;
+    width: 100%;
+    height: 100%;
+    margin: 0.5em;
+  }
+
+  /* Footer */
+  footer img {
+    min-width: 80px;
+    width: 100%;
+    height: 100%;
+  }
+}

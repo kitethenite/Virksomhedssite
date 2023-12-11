@@ -21,7 +21,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+a {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -82,6 +83,7 @@ footer a {
   .menu a {
     margin: 1em 0 0;
     line-height: 150%;
+    font-weight: 100;
   }
 
   .opacity {

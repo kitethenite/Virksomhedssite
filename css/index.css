@@ -43,12 +43,15 @@ img {
 
 nav {
   margin: 2em 2em 0 0;
+  text-align: end; 
+
 }
 
 .menu {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   list-style: none;
+  padding-right: 5px;
 }
 
 .menu li {
@@ -60,11 +63,10 @@ nav {
 }
 
 .menu a {
-  display: block;
+  display: inline;
   color: #ffffff;
   text-decoration: none;
   transition: color 0.3s;
-  text-align: end;
 }
 
 .menu a:hover {
@@ -107,6 +109,7 @@ video {
 
 main {
   padding: 0 5%;
+  margin: 5em 0;
 }
 
 /*** footer area ****/
@@ -209,6 +212,8 @@ footer {
 
   /*** end of burger menu ***/
 
+/** main **/
+
   /* Footer */
   footer img {
     min-width: 80px;
@@ -238,6 +243,7 @@ footer {
 .index-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 0 2em;
 }
 
 .index-img {
@@ -258,5 +264,6 @@ footer {
   .index-grid {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 2em;
   }
 }

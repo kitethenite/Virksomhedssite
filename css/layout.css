@@ -34,6 +34,9 @@
   height: 100%;
 }
 
+header {
+  margin: 0 0 5em 0;
+}
 
 nav {
   margin: 2em 2em 0 0;
@@ -44,6 +47,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   list-style: none;
+  padding-right: 5px;
 }
 
 .menu li {

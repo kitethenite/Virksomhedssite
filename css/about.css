@@ -18,6 +18,13 @@ screen {
   margin: 0%; 
 }
 
+.smiley_rapport {
+  width: 15%; 
+  height: auto; 
+  margin-left: 90px;
+  margin-top: 50px;
+}
+
 
 .kontakt {
   width: 30%;
@@ -43,12 +50,8 @@ h2 {
   color: white;
 }
 
-p {
-  font-size: 20px;
-}
-
 .p1 {
-  font-size: 15px;
+
   color: #A15A44;
   font-family: "Heebo";
   src: url("../fonts/Heebo/Heebo-Regular.woff2") format("woff2");
@@ -59,7 +62,8 @@ p {
 .p2 {
   font-family: "Heebo";
   src: url("../fonts/Heebo/Heebo-Regular.woff2") format("woff2");
-  font-size: 15px;
+  font-size: 20px;
+  line-height: 1.5;
   color: white;
   margin-left: 90px;
   margin-right: 70px;

@@ -7,19 +7,32 @@
     <link rel="stylesheet" href="css/general_styles.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="icon" href="img/favicon.svg" />
+    <link rel="mask-icon" href="img/favicon.svg" color="#000000" />
   </head>
   <body>
-    <header>
+    <header class="header-grid">
       <div class="toplogo">
-        <a href="index.html"><img src="" alt="logo for Tak for kaffe" /></a>
+        <a href="index.html"
+          ><img
+            src="img/logo-original.svg"
+            alt="logo for Tak for kaffe"
+            class="filter-brown"
+        /></a>
       </div>
-      <div class="topnav">
-        <a href="menu.html">Menu</a>
-        <a href="contact.html">Kontakt</a>
-        <a href="work.html">Job</a>
-        <a href="about.html">Om os</a>
-        <a href="index.html">Forside</a>
-      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+          <li><a href="work.html">Job</a></li>
+          <li><a href="about.html">Om os</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
     </header>
     <main>
       <h1>Menu</h1>
@@ -35,15 +48,13 @@
       <div class="menu_morgenmad_list"></div>
       <div class="frokost_menu_container">
         <section>
-          <article>
-
-          </article>
+          <article></article>
         </section>
       </div>
       <div class="søde_sager_menu_container"></div>
       <div class="kaffe_menu_container">
         <h2>Kaffe</h2>
-        <img src="img/kaffe.jpg" alt="kaffelatte">
+        <img src="img/kaffe.jpg" alt="kaffelatte" />
         <div class="item-kaffe">
           <section>
             <article>
@@ -99,7 +110,7 @@
                 <dt>Laktosefri-</dt>
                 <dd>Soya-</dd>
                 <dd>Havre-</dd>
-                <dd> eller Mandelmælk</dd>
+                <dd>eller Mandelmælk</dd>
               </dl>
               <p class="price-coffee">5kr</p>
             </article>
@@ -109,16 +120,56 @@
       <div class="varme_drikke_menu_container"></div>
       <div class="kolde_drikke_menu_container"></div>
     </main>
-
-    <footer>
-      <div class="footercontact"></div>
-      <div class="footeraddress"></div>
-      <div class="footersm"></div>
+    <footer class="footer-grid">
+      <div class="footertime">
+        <h3 class="openingtime">Åbningstider</h3>
+        <div class="openingdays">
+          <p>Man - fre</p>
+          <p>Lørdag</p>
+          <p>Søndag</p>
+        </div>
+        <div class="footerhours">
+          <p>8.00 - 17.30</p>
+          <p>9.00 - 16.30</p>
+          <p>10.30 - 16.00</p>
+        </div>
+      </div>
+      <div class="footeraddress">
+        <h3>Find os her</h3>
+        <div>
+          <a href="https://maps.app.goo.gl/bZFvJP4GFXez5YMk6" target="_blank"
+            ><p>Niels Hemmingsens Gade 10</p>
+            <p>1153 København</p></a
+          >
+        </div>
+      </div>
+      <div class="footersm">
+        <h3>Følg os på sociale medier</h3>
+        <div class="sm-icons">
+          <a
+            href="https://www.facebook.com/Takforkaffe1153"
+            target="_blank"
+            class="sm-icon"
+          >
+            <img src="img/fb-icon.svg" alt="facebook"
+          /></a>
+          <a
+            href="https://www.instagram.com/takfor_kaffe/"
+            target="_blank"
+            class="sm-icon"
+          >
+            <img src="img/ig-icon.svg" alt="instagram"
+          /></a>
+        </div>
+      </div>
       <div class="footerlogo">
         <a href="index.html"
-          ><img src="" alt="small logo picture for Tak for kaffe"
+          ><img
+            src="img/logo-original.svg"
+            alt="small logo picture for Tak for kaffe"
         /></a>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

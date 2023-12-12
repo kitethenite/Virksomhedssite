@@ -1,0 +1,82 @@
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: "Heebo";
+    color: #A15A44;
+}
+
+email { 
+position: absolute;
+width: 367px;
+height: 31px;
+
+font-family: 'Frank Ruhl Libre';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 31px;
+/* identical to box height */
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #A15A44;
+}
+
+css
+.contact-info p {
+  display: inline;
+  margin-right: 100px; /* Juster margenen efter behov */
+}
+
+.grid_1-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+}
+
+.form-field {
+    text-align: center;
+
+}
+
+img {
+   max-width: 10%; 
+   min-width: 10%;
+   
+}
+
+button {
+    max-width: 100%;
+    color: #A15A44;
+}
+
+.p {
+    font-family: "Heebo";
+    src: url("../fonts/Heebo/Heebo-Regular.woff2") format("woff2");
+    color: #A15A44
+  }
+
+.telefon {
+    color: #A15A44;
+}
+.mail {
+    color: #A15A44;
+}
+
+.maps {
+    color: #A15A44;
+}
+
+.flex {
+    color: #A15A44;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.text-field {
+    width: 100%;
+}
+
+
+

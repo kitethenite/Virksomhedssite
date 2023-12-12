@@ -1,0 +1,176 @@
+/**billeder og fonte**/
+
+@media (min-width: 800px) {
+
+  .arbejde {
+    width: 450px;
+  }
+
+.om {
+  width: 60%;
+  margin-left: 100px;
+  margin-right: auto;
+}
+
+.arbejde2 {
+  width: 100%;
+  height: auto;
+  margin: 0%;
+}
+
+.smiley_rapport {
+  width: 15%;
+  height: auto;
+  margin-left: 90px;
+  margin-top: 50px;
+}
+
+.kontakt {
+  width: 30%;
+  margin-top: 3%;
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 10px;
+  color: #a15a44;
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+h2 {
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  font-size: 40px;
+  margin-top: 70px;
+  margin-left: 90px;
+  color: white;
+}
+
+.p3 {
+
+  color: #A15A44;
+  font-family: "Heebo";
+  src: url("../fonts/Heebo/Heebo-Regular.woff2") format("woff2");
+  margin-right: 100px;
+  margin-top: 30px;
+}
+
+.p4 {
+  font-family: "Heebo";
+  src: url("../fonts/Heebo/Heebo-Regular.woff2") format("woff2");
+  font-size: 20px;
+  color: white;
+  margin-left: 90px;
+  margin-right: 70px;
+  margin-top: 30px;
+}
+
+#grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 100px;
+}
+
+#grid_2-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 50px;
+  padding: 0 auto;
+  background-color: #a15a44;
+}
+
+}
+
+
+@media (max-width: 800px) {
+
+  .arbejde {
+    width: 450px;
+  }
+
+.om {
+  width: 70%;
+  margin-left: 100px;
+  margin-right: auto;
+}
+
+.arbejde2 {
+  width: 100%;
+  height: auto;
+  margin: 0%;
+}
+
+.smiley_rapport {
+  width: 15%; 
+  height: auto; 
+  margin-left: 90px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+
+.kontakt {
+  width: 30%;
+  margin-top: 3%;
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 10px;
+  color: #a15a44;
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 20px;
+
+}
+
+h2 {
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  font-size: 40px;
+  padding-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  color: white;
+}
+
+.p3 {
+
+  color: #A15A44;
+  font-family: "Heebo";
+  src: url("../fonts/Heebo/Heebo-Regular.woff2") format("woff2");
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+.p4 {
+  font-family: "Heebo";
+  src: url("../fonts/Heebo/Heebo-Regular.woff2") format("woff2");
+  font-size: 20px;
+  color: white;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 30px;
+}
+
+#grid_2-1 {
+  background-color: #a15a44;
+}
+
+#grid_1-1 {
+  margin-top: 100px;
+  justify-content: center;
+
+}
+
+
+}

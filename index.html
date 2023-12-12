@@ -3,32 +3,159 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tak for kaffe</title>
+    <title>Tak for Kaffe</title>
     <link rel="stylesheet" href="css/general_styles.css" />
-    <link rel="stylesheet" href="css/layout.css" />
+    <!-- <link rel="stylesheet" href="css/layout.css" /> -->
     <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="icon" href="img/favicon.svg" />
+    <link rel="mask-icon" href="img/favicon.svg" color="#000000" />
   </head>
   <body>
-    <header>
-      <div class="toplogo">
-        <a href="index.html"><img src="" alt="logo for Tak for kaffe" /></a>
+    <header class="header-grid">
+      <div class="banner-video">
+         <img src="img/fallback-img.jpg" alt="Fallback image for video" class="img-fallback">
+        <video autoplay muted loop>
+         
+          <source src="https://heyheywood.com/kea/05_indhold/video/header-video.mp4" type="video/mp4"/>
+        </video>
       </div>
-      <div class="topnav">
-        <a href="menu.html">Menu</a>
-        <a href="contact.html">Kontakt</a>
-        <a href="work.html">Job</a>
-        <a href="about.html">Om os</a>
+      <div class="overlay">
+        <div class="toplogo">
+          <a href="index.html"
+            ><img src="img/logo-original.svg" alt="logo for Tak for kaffe"
+          /></a>
+        </div>
+        <nav>
+          <ul class="menu">
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="work.html">Job</a></li>
+            <li><a href="about.html">Om os</a></li>
+          </ul>
+          <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          <a href="#scrollto" class="scroll-down-link">
+            <svg
+              class="scroll-down-arrow"
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20 40L40 20L36 16L22 28V0H18V28L4 16L0 20L20 40Z"
+                fill="#fff"
+              />
+            </svg>
+          </a>
+        </nav>
       </div>
     </header>
-    <main>
-      <div class="banner-video"></div>
-      <h1></h1>
+    <main class="index-grid" id="scrollto">
+      <div class="index-main-row-1 brown-bg">
+        <div class="index-main-text">
+          <h1>Tak for Kaffe</h1>
+
+          <p>
+            Hos Tak for Kaffe stræber vi efter at skabe de fleste af vores
+            produkter selv. Vores koldhævede müsliboller, lækre granola, juice,
+            smoothies, grød, sandwich og meget mere er håndlavede. Vi
+            prioriterer brugen af økologiske råvarer, og vores rugbrød og kager
+            hentes frisk fra bageren. Det glutenfrie sortiment kommer fra
+            Naturbageriet i Frederiksborggade.
+          </p>
+        </div>
+        <div class="index-img">
+          <img
+            src="img/index-bar.jpg"
+            alt="image of the cafe"
+            class="image"
+          />
+          <div class="menu-btn-div">
+            <a href="menu.html" class="menu-btn">Se vores menu her</a>
+          </div>
+        </div>
+      </div>
+      <div class="index-main-row-2">
+        <div class="index-img">
+          <img
+            src="img/index-coffe-machine.jpg"
+            alt="image of the cafe"
+            class="image"
+          />
+        </div>
+        <div class="index-main-text">
+          <h2>Kaffe</h2>
+          <p>
+            Hos Tak for Kaffe er vi stolte af vores kaffeoplevelse. Vores
+            kaffebønner, leveret af Caffè River, er omhyggeligt udvalgt og
+            dyrket i Italien. Caffè River er kendt for deres dedikation til
+            bæredygtighed og kvalitet, idet de samarbejder direkte med
+            kaffebønder og støtter bæredygtige dyrkningsmetoder.
+      <br><br>
+            Vores kaffe er en blanding af nøje udvalgte arabicabønner, beriget
+            med en lille procentdel robusta for at tilføje dybde til smagen.
+            Denne blanding giver en rig og fyldig smagsoplevelse med en subtil
+            undertone af krydderier og en behagelig crema.
+          </p>
+        </div>
+      </div>
     </main>
-    <footer>
-      <div class="footercontact"></div>
-      <div class="footeraddress"></div>
-      <div class="footersm"></div>
-      <div class="footerlogo"></div>
+    <footer class="footer-grid">
+      <div class="footertime">
+        <h3 class="openingtime">Åbningstider</h3>
+        <div class="openingdays">
+          <p>Man - fre</p>
+          <p>Lørdag</p>
+          <p>Søndag</p>
+        </div>
+        <div class="footerhours">
+          <p>8.00 - 17.30</p>
+          <p>9.00 - 16.30</p>
+          <p>10.30 - 16.00</p>
+        </div>
+      </div>
+      <div class="footeraddress">
+        <h3>Find os her</h3>
+        <div>
+          <a href="https://maps.app.goo.gl/bZFvJP4GFXez5YMk6" target="_blank"
+            ><p>Niels Hemmingsens Gade 10</p>
+            <p>1153 København</p></a
+          >
+        </div>
+      </div>
+      <div class="footersm">
+        <h3>Følg os på sociale medier</h3>
+        <div class="sm-icons">
+          <a
+            href="https://www.facebook.com/Takforkaffe1153"
+            target="_blank"
+            class="sm-icon"
+          >
+            <img src="img/fb-icon.svg" alt="facebook"
+          /></a>
+          <a
+            href="https://www.instagram.com/takfor_kaffe/"
+            target="_blank"
+            class="sm-icon"
+          >
+            <img src="img/ig-icon.svg" alt="instagram"
+          /></a>
+        </div>
+      </div>
+      <div class="footerlogo">
+        <a href="index.html"
+          ><img
+            src="img/logo-original.svg"
+            alt="small logo picture for Tak for kaffe"
+        /></a>
+      </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

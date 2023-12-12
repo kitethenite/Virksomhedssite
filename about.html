@@ -7,28 +7,123 @@
     <link rel="stylesheet" href="css/general_styles.css" />
     <link rel="stylesheet" href="css/layout.css" />
     <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="icon" href="img/favicon.svg" />
+    <link rel="mask-icon" href="img/favicon.svg" color="#000000" />
   </head>
   <body>
-    <header>
+    <header class="header-grid">
       <div class="toplogo">
-        <a href="index.html"><img src="" alt="logo for Tak for kaffe" /></a>
-      </div>
-      <div class="topnav">
-        <a href="menu.html">Menu</a>
-        <a href="contact.html">Kontakt</a>
-        <a href="work.html">Job</a>
-        <a href="about.html">Om os</a>
+            <a href="index.html"
+              ><img src="img/logo-original.svg" alt="logo for Tak for kaffe" class="filter-brown"
+            /></a>
+          </div>
+          <nav>
+            <ul class="menu">
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="contact.html">Kontakt</a></li>
+              <li><a href="work.html">Job</a></li>
+              <li><a href="about.html">Om os</a></li>
+            </ul>
+            <div class="burger">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+          </div>
+          </nav>
       </div>
     </header>
-    <main></main>
-    <footer>
-      <div class="footercontact"></div>
-      <div class="footeraddress"></div>
-      <div class="footersm"></div>
+    <main>
+
+      <section id="grid_1-1">
+        <div class="col">
+          <img src="img/kaffe.jpg" alt="kaffe" class="om" />
+          <img src="img/musliboller.jpg" alt="musliboller" class="om" />
+          <img src="img/snueknuser.jpg" alt="snueknuser" class="om" />
+        </div>
+        <div class="col2">
+          <h1>Om</h1>
+          <p class="p3">
+            Tak for kaffe er en lille intim cafe med beliggenhed i hjertet af København. Vi er ikke bare en café eller bageri – vi er et mødested for smag, kvalitet og gode stunder. Vi er stolte af at præsentere vores unikke sortiment af håndlavede delikatesser, skabt med omhu og dedikation til at levere den bedste smagsoplevelse til vores kunder. Hos os handler det om autentisk smag, friske råvarer og en forkærlighed for økologi. Vi er taknemmelige for at dele vores lidenskab for kaffe og lækkerier med vores dedikerede kunder.
+Besøg os, tag plads, nyd atmosfæren, og lad os forkæle dine smagsløg. Tak for at vælge Tak for kaffe – hvor smagen møder dedikation!
+          </p>
+        </div>
+      </section>
+
+      <section id="grid_2-1">
+        <div class="col3">
+          <h2>Vores vision</h2>
+          <p class="p4">
+            Vores vision er at være kendt for vores ekspertise i at skabe lækre, håndlavede produkter, der altid lever op til den højeste standard af kvalitet. Fra vores koldhævede müsliboller til vores glutenfrie knækbrød og kager er vi fast besluttede på at levere en kulinarisk oplevelse, der overgår forventningerne. Derudover ser vi en bæredygtig fremtid som en integreret del af vores vision. Ved at fremme brugen af økologiske råvarer og ved at støtte lokale producenter og bæredygtige initiativer ønsker vi at bidrage til en positiv indvirkning på både miljøet og samfundet.
+          </p>
+          <a href="#"> <img
+            src="img/smiley_rapport.svg"
+            alt="smiley_rapport"
+            class="smiley_rapport"
+          /></a>
+         
+
+        </div>
+        <div class="col4">
+          <img
+            src="img/vores_vision.png"
+            alt="Vores vision"
+            class="arbejde2"
+          />
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer-grid">
+      <div class="footertime">
+        <h3 class="openingtime">Åbningstider</h3>
+        <div class="openingdays">
+          <p>Man - fre</p>
+          <p>Lørdag</p>
+          <p>Søndag</p>
+        </div>
+        <div class="footerhours">
+          <p>8.00 - 17.30</p>
+          <p>9.00 - 16.30</p>
+          <p>10.30 - 16.00</p>
+        </div>
+      </div>
+      <div class="footeraddress">
+        <h3>Find os her</h3>
+        <div>
+          <a href="https://maps.app.goo.gl/bZFvJP4GFXez5YMk6" target="_blank"
+            ><p>Niels Hemmingsens Gade 10</p>
+            <p>1153 København</p></a
+          >
+        </div>
+      </div>
+      <div class="footersm">
+        <h3>Følg os på sociale medier</h3>
+        <div class="sm-icons">
+          <a
+            href="https://www.facebook.com/Takforkaffe1153"
+            target="_blank"
+            class="sm-icon"
+          >
+            <img src="img/fb-icon.svg" alt="facebook"
+          /></a>
+          <a
+            href="https://www.instagram.com/takfor_kaffe/"
+            target="_blank"
+            class="sm-icon"
+          >
+            <img src="img/ig-icon.svg" alt="instagram"
+          /></a>
+        </div>
+      </div>
       <div class="footerlogo">
         <a href="index.html"
-          ><img src="" alt="small logo picture for Tak for kaffe" /></a>
+          ><img
+            src="img/logo-original.svg"
+            alt="small logo picture for Tak for kaffe"
+        /></a>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

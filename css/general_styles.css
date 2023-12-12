@@ -2,31 +2,100 @@
 
 /** our colour palette - from dark to brightest: 
 
+NEW COLOURS:
+
+Main-brown x;
+Main-white: #F8F6F2;
+
+
 Dark-brown: #573F3B
 Light-brown: #A6775E
 Orange: #573F3B
 Green: #A7B284
 Off-white: #F2E6D9
 
-**/
+***** global styles - both mobile and desktop *****/
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Frank Ruhl Libre';
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: "Montserrat", sans-serif;
 }
 
-blockquote, q, cite {
-    font-family: 'Heebo';
+blockquote,
+q,
+cite {
+  font-family: "Taviraj", sans-serif;
 }
 
 p {
-    font-family: 'Taviraj';
+  font-family: "Heebo", sans-serif;
+  font-size: 20px;
 }
 
+body {
+  background-color: #f8f6f2;
+}
 
+/** HEADER AREA **/
 
-/***** global styles - both mobile and desktop *****/
+header {
+  color: #a15a44;
+  font-family: "Heebo", sans-serif;
+}
 
+header a {
+  color: #a15a44;
+  text-decoration: none;
+}
 
-/********* mobile only ********/
+/** used to change colour of SVG-logo in header as from https://isotropic.co/tool/hex-color-to-css-filter/ **/
+.filter-brown {
+  filter: invert(50%) sepia(10%) saturate(2500%) hue-rotate(315deg)
+    brightness(88%) contrast(78%);
+}
+/** FOOTER AREA **/
+
+footer {
+  background-color: #a15a44;
+  color: white;
+  font-family: "Heebo", sans-serif;
+  font-size: calc(10px + 0.390625vw);
+}
+
+footer h3 {
+  font-family: "Heebo", sans-serif;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #dbb070;
+}
+
+footer p {
+  font-size: calc(10px + 0.390625vw);
+
+}
 
 /*********** desktop only *********/
+
+/********* mobile only ********/
+@media screen and (max-width: 720px) {
+  .menu a {
+    margin: 1em 0 0;
+    line-height: 150%;
+    font-weight: 100;
+  }
+
+  .opacity {
+    background-color: black;
+  }
+}

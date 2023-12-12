@@ -1,7 +1,3 @@
-/****** LAYOUT STYLES, ONLY GRIDS, WIDTH MARGIN AND PADDINGS ETC - Will be used for universal rules, such as for header and footer *******/
-
-/** Universal CSS reset - to remove the different browsers default stylings **/
-
 * {
   margin: 0;
   padding: 0;
@@ -11,10 +7,25 @@
 img {
   width: 100%;
 }
-/***** global - both mobile and desktop *****/
 
-/* Header */
+/* HEADER AREA index */
 .header-grid {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-image: linear-gradient(
+    rgba(34, 35, 46, 0.75),
+    rgba(204, 237, 239, 0.1)
+  );
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -22,14 +33,12 @@ img {
 .toplogo {
   align-self: start;
   margin: 1em;
-  z-index: 1;
 }
 
 .toplogo img {
   max-width: 150px;
   width: 100%;
   height: 100%;
-  z-index: 1;
 }
 
 /** Navigation + burger **/
@@ -55,13 +64,13 @@ nav {
 
 .menu a {
   display: inline;
-  color: #a15a44;
+  color: #ffffff;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .menu a:hover {
-  color: rgb(80, 38, 22);
+  color: rgb(177, 108, 80);
 }
 
 .burger {
@@ -75,7 +84,7 @@ nav {
 .burger .line {
   width: 100%;
   height: 2px;
-  background-color: #a15a44;
+  background-color: #fafafa;
   margin-bottom: 5px;
   transition: 0.2s linear;
 }
@@ -83,8 +92,119 @@ nav {
 .burger {
   display: none;
 }
+/** end of navigation + burger **/
 
-/* Footer*/
+.banner-video {
+  height: 100vh;
+  position: relative;
+}
+
+
+.img-fallback {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  object-fit: cover;
+}
+
+video {
+  object-fit: cover;
+  position: absolute;
+  width: auto;
+  height: auto;
+}
+
+
+.scroll-down-arrow {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: moveUpDown 1.5s infinite;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, 10px);
+  }
+  100% {
+    transform: translate(-50%, 0);
+  }
+}
+
+/**** main area ****/
+
+.index-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.index-main-row-1,
+.index-main-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.index-main-row-1 {
+  color: #f8f6f2;
+}
+
+.index-main-row-2 {
+  color: #a15a44;
+}
+
+.index-main-text {
+  margin: 30px 10% 80px;
+  max-width: 65ch;
+}
+
+h1,
+h2 {
+  padding: 50px 0 30px;
+}
+
+.brown-bg {
+  background-color: #a15a44;
+}
+
+.menu-btn-div {
+  margin: -5em 1em;
+  text-align: center;
+}
+
+.menu-btn {
+  background-color: #f8f6f2;
+  color: #a15a44;
+  text-decoration: none;
+  padding: 1em 1em 0.7em;
+  border-radius: 12px;
+  font-size: 20px;
+}
+
+.menu-btn:hover {
+  font-size: 21px;
+  background-color: #f8f6f2;
+  color: #e48c71;
+}
+
+.menu-btn:active {
+  color: purple;
+}
+
+.index-img {
+  margin: auto; /* this centers the images */
+  width: 100%;
+  height: 100%;
+}
+
+main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 /*** footer area ****/
 .footer-grid {
@@ -158,28 +278,33 @@ footer {
     brightness(88%) contrast(78%);
 }
 
-/*********** desktop only *********/
- @media screen and (min-width: 720px) {
-  /** Header area **/
- nav {
-    justify-self: auto;
-  } 
-
-/** footer area **/
-footer img {
-    max-width: 150px;
-    width: 100%;
-    height: 100%;
-  } 
-} 
-
 /********* mobile only ********/
 @media screen and (max-width: 720px) {
-  /* Header mobile */
-  header {
-    margin-bottom: 5em;
+  /* disables video on mobile */
+  @media screen and (max-width: 480px) {
+    video {
+      display: none;
+    }
+
+    .header-grid {
+      background: url(../img/kaffe-index.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .banner-video,
+    .overlay {
+      height: 50vh;
+    }
+
+    /*** end of video disable ***/
+
+    .scroll-down-link {
+      display: none;
+    }
   }
 
+  /* Header mobile */
   .toplogo img {
     max-width: 150px;
     min-width: 70px;
@@ -234,6 +359,18 @@ footer img {
   }
   /*** end of burger menu mobile ***/
 
+  /* index main area mobile */
+  .index-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+  }
+
+  .index-main-row-1,
+  .index-main-row-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 
   /* Footer mobile */
 
@@ -254,3 +391,4 @@ footer img {
     width: 50px;
   }
 }
+

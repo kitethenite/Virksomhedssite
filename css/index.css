@@ -99,12 +99,21 @@ nav {
   position: relative;
 }
 
+
+.img-fallback {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  object-fit: cover;
+}
+
 video {
   object-fit: cover;
   position: absolute;
   width: auto;
   height: auto;
 }
+
 
 .scroll-down-arrow {
   position: absolute;

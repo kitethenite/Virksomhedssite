@@ -22,12 +22,14 @@ img {
 .toplogo {
   align-self: start;
   margin: 1em;
+  z-index: 1;
 }
 
 .toplogo img {
   max-width: 150px;
   width: 100%;
   height: 100%;
+  z-index: 1;
 }
 
 /** Navigation + burger **/

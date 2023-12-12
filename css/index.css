@@ -282,12 +282,12 @@ footer {
 @media screen and (max-width: 720px) {
   /* disables video on mobile */
   @media screen and (max-width: 480px) {
-    video {
+    video, .img-fallback {
       display: none;
     }
 
     .header-grid {
-      background: url(../img/kaffe-index.jpg);
+      background: url(../img/kaffe-index.webp);
       background-size: cover;
       background-position: center;
     }

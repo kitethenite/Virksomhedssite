@@ -4,7 +4,7 @@
 
 NEW COLOURS:
 
-Main-brown #A15A44;
+Main-brown x;
 Main-white: #F8F6F2;
 
 
@@ -55,7 +55,7 @@ header a {
 
 /** used to change colour of SVG-logo in header as from https://isotropic.co/tool/hex-color-to-css-filter/ **/
 .filter-brown {
-  filter: invert(60%) sepia(8%) saturate(2192%) hue-rotate(320deg)
+  filter: invert(50%) sepia(10%) saturate(2500%) hue-rotate(315deg)
     brightness(88%) contrast(78%);
 }
 /** FOOTER AREA **/

@@ -65,26 +65,3 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-// image animation
-document.addEventListener('DOMContentLoaded', function () {
-  const images = document.querySelectorAll('.image');
-
-  const options = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.3 // Adjust this threshold as needed
-  };
-
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('image-visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, options);
-
-  images.forEach(image => {
-    observer.observe(image);
-  });
-});

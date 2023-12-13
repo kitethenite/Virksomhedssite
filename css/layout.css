@@ -55,7 +55,7 @@ nav {
 
 .menu a {
   display: inline;
-  color: #a15a44;
+  color: var(--main-brown);
   text-decoration: none;
   transition: color 0.3s;
 }

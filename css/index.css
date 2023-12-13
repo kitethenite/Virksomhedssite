@@ -149,11 +149,11 @@ video {
 }
 
 .index-main-row-1 {
-  color: #f8f6f2;
+  color: var(--main-white);
 }
 
 .index-main-row-2 {
-  color: #a15a44;
+  color: var(--main-brown);
 }
 
 .index-main-text {
@@ -167,7 +167,7 @@ h2 {
 }
 
 .brown-bg {
-  background-color: #a15a44;
+  background-color: var(--main-brown);
 }
 
 .menu-btn-div {
@@ -176,8 +176,8 @@ h2 {
 }
 
 .menu-btn {
-  background-color: #f8f6f2;
-  color: #a15a44;
+  background-color: var(--main-white);
+  color: var(--main-brown);
   text-decoration: none;
   padding: 1em 1em 0.7em;
   border-radius: 12px;
@@ -186,7 +186,7 @@ h2 {
 
 .menu-btn:hover {
   font-size: 21px;
-  background-color: #f8f6f2;
+  background-color: var(--main-white);
   color: #e48c71;
 }
 

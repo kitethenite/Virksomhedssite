@@ -4,7 +4,7 @@
 
 NEW COLOURS:
 
-Main-brown x;
+Main-brown #a15a44;
 Main-white: #F8F6F2;
 
 
@@ -15,6 +15,11 @@ Green: #A7B284
 Off-white: #F2E6D9
 
 ***** global styles - both mobile and desktop *****/
+
+:root {
+  --main-brown: #a15a44;
+  --main-white: #F8F6F2;
+}
 
 h1,
 h2,
@@ -32,24 +37,24 @@ cite {
   font-family: "Taviraj", sans-serif;
 }
 
-p {
+p, form {
   font-family: "Heebo", sans-serif;
   font-size: 20px;
 }
 
 body {
-  background-color: #f8f6f2;
+  background-color: var(--main-white);
 }
 
 /** HEADER AREA **/
 
 header {
-  color: #a15a44;
+  color: var(--main-brown);
   font-family: "Heebo", sans-serif;
 }
 
 header a {
-  color: #a15a44;
+  color: var(--main-brown);
   text-decoration: none;
 }
 
@@ -61,7 +66,7 @@ header a {
 /** FOOTER AREA **/
 
 footer {
-  background-color: #a15a44;
+  background-color: var(--main-brown);
   color: white;
   font-family: "Heebo", sans-serif;
   font-size: calc(10px + 0.390625vw);

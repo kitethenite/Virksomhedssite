@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "Montserrat-bold";
+  src: url(/fonts/Montserrat/Montserrat-Bold.woff2);
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+    font-family: 'Montserrat-light';
+    src: url(/fonts/Montserrat/Montserrat-Light.woff2);
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+/******MOBILSITE-BREAKPOINT*******/
+@media (max-width: 800px) {
+  /******UNIVERSAL-MENU-LAYOUT******/
+  article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+    margin: 10px 0px 10px 0px;
+  }
+  .header_1_menu {
+    font-family: "Montserrat-bold";
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px 50px 0px;
+    color: #a15a44;
+    font-size: 72px;
+    
+  }
+  .header_2_menu {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin: 50px 100px 10px 0px;
+    color: #a15a44;
+    font-size: 24px;
+    
+  }
+  .image_menu {
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    height: auto;
+    border-radius: 5px;
+    margin-left: 30px;
+
+  }
+  .menu_price {
+    font-family: "Montserrat-bold";
+    font-weight: bold;
+    color: #a15a44;
+    margin-left: 200px;
+  }
+  .type-coffee{
+    font-family: "Montserrat-light";
+    margin-left: 100px;
+    color: #a15a44;
+  }
+  h2{
+    font-family: "Montserrat-bold";
+    font-weight: bold;
+    margin-left: 100px;
+  }
+
+
+}
+/******WEBSITE-BREAKPOINT*******/
+@media (min-width: 800px) {
+    /******UNIVERSAL-MENU-LAYOUT******/
+    
+    .grid_1_1{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    article {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0px;
+        margin: 10px 0px 10px 0px;
+      }
+    .header_1_menu {
+      font-family: "Montserrat-bold";
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 50px 0px 50px 0px;
+      color: #a15a44;
+      font-size: 72px;
+      
+    }
+    .header_2_menu {
+      display: flex;
+      align-items: left;
+      justify-content: left;
+      margin: 50px 100px 10px 0px;
+      color: #a15a44;
+      font-size: 24px;
+      
+    }
+    .image_menu {
+      display: flex;
+      justify-content: center;
+      width: 85%;
+      height: auto;
+      border-radius: 5px;
+      margin-left: 30px;
+  
+    }
+    .menu_price {
+      font-family: "Montserrat-bold";
+      font-weight: bold;
+      color: #a15a44;
+      margin-left: 200px;
+    }
+    .type-coffee{
+      font-family: "Montserrat-light";
+      margin-left: 100px;
+      color: #a15a44;
+    }
+    h2{
+      font-family: "Montserrat-bold";
+      font-weight: bold;
+      margin-left: 100px;
+    }
+  
+  
+  }

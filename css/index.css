@@ -8,16 +8,7 @@ img {
   width: 100%;
 }
 
-.image {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out; /* Adjust animation properties */
-}
-
-.image-visible {
-  opacity: 1;
-}
-
-/* HEADER AREA */
+/* HEADER AREA index */
 .header-grid {
   margin: 0;
   padding: 0;
@@ -108,12 +99,21 @@ nav {
   position: relative;
 }
 
+
+.img-fallback {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  object-fit: cover;
+}
+
 video {
   object-fit: cover;
   position: absolute;
   width: auto;
   height: auto;
 }
+
 
 .scroll-down-arrow {
   position: absolute;
@@ -149,25 +149,25 @@ video {
 }
 
 .index-main-row-1 {
-  color: #f8f6f2;
+  color: var(--main-white);
 }
 
 .index-main-row-2 {
-  color: #a15a44;
+  color: var(--main-brown);
 }
 
-.index-main-text p {
-  padding: 0;
-  margin: 20px;
+.index-main-text {
+  margin: 30px 10% 80px;
+  max-width: 65ch;
 }
 
 h1,
 h2 {
-  margin: 20px;
+  padding: 50px 0 30px;
 }
 
 .brown-bg {
-  background-color: #a15a44;
+  background-color: var(--main-brown);
 }
 
 .menu-btn-div {
@@ -176,8 +176,8 @@ h2 {
 }
 
 .menu-btn {
-  background-color: #f8f6f2;
-  color: #a15a44;
+  background-color: var(--main-white);
+  color: var(--main-brown);
   text-decoration: none;
   padding: 1em 1em 0.7em;
   border-radius: 12px;
@@ -186,7 +186,7 @@ h2 {
 
 .menu-btn:hover {
   font-size: 21px;
-  background-color: #f8f6f2;
+  background-color: var(--main-white);
   color: #e48c71;
 }
 
@@ -221,22 +221,22 @@ footer {
 
 .footertime {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 1em;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .openingtime {
   grid-column: 1;
   grid-row: 1;
-  justify-self: start;
 }
 
 .openingdays {
   grid-row: 2;
 }
 .footerhours {
+  grid-column: 2/-1;
   text-align: right;
   grid-row: 2;
+  white-space: nowrap;
 }
 
 .footersm {
@@ -282,12 +282,12 @@ footer {
 @media screen and (max-width: 720px) {
   /* disables video on mobile */
   @media screen and (max-width: 480px) {
-    video {
+    video, .img-fallback {
       display: none;
     }
 
     .header-grid {
-      background: url(../img/banner-mobile-test.jpg);
+      background: url(../img/kaffe-index.webp);
       background-size: cover;
       background-position: center;
     }
@@ -359,7 +359,7 @@ footer {
   }
   /*** end of burger menu mobile ***/
 
-  /* Main area mobile */
+  /* index main area mobile */
   .index-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -372,13 +372,6 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .index-main-text:first-of-type {
-    padding: 4em 0 0;
-  }
-
-  .index-main-text:last-of-type {
-    padding: 0 0 3em;
-  }
   /* Footer mobile */
 
   .footer-grid {
@@ -399,6 +392,3 @@ footer {
   }
 }
 
-/***** desktop view *****/
-@media screen and (min-width: 720px) {
-}

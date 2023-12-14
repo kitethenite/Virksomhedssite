@@ -4,7 +4,7 @@
 
 NEW COLOURS:
 
-Main-brown #A15A44;
+Main-brown #a15a44;
 Main-white: #F8F6F2;
 
 
@@ -15,6 +15,11 @@ Green: #A7B284
 Off-white: #F2E6D9
 
 ***** global styles - both mobile and desktop *****/
+
+:root {
+  --main-brown: #a15a44;
+  --main-white: #F8F6F2;
+}
 
 h1,
 h2,
@@ -38,30 +43,30 @@ p, form {
 }
 
 body {
-  background-color: #f8f6f2;
+  background-color: var(--main-white);
 }
 
 /** HEADER AREA **/
 
 header {
-  color: #a15a44;
+  color: var(--main-brown);
   font-family: "Heebo", sans-serif;
 }
 
 header a {
-  color: #a15a44;
+  color: var(--main-brown);
   text-decoration: none;
 }
 
 /** used to change colour of SVG-logo in header as from https://isotropic.co/tool/hex-color-to-css-filter/ **/
 .filter-brown {
-  filter: invert(60%) sepia(8%) saturate(2192%) hue-rotate(320deg)
+  filter: invert(50%) sepia(10%) saturate(2500%) hue-rotate(315deg)
     brightness(88%) contrast(78%);
 }
 /** FOOTER AREA **/
 
 footer {
-  background-color: #a15a44;
+  background-color: var(--main-brown);
   color: white;
   font-family: "Heebo", sans-serif;
   font-size: calc(10px + 0.390625vw);
